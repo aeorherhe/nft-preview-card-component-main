@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: outfit, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+h2 {
+  margin: 5px 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  height: auto;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.hover-img {
+  align-self: center;
+  position: absolute;
+  margin-top: 50px;
+  padding: 100px;
+  opacity: 0;
+}
+
+.hover-img:hover {
+  opacity: 1;
+}
+
+.equilibrium-img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price,
+.time-left {
+  display: flex;
+  gap: 10px;
+}
+
+h3 {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+.user-info {
+  display: flex;
+  border-top: 3px solid hsl(215, 32%, 27%);
+  padding-top: 15px;
+  align-items: center;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid hsl(215, 51%, 70%);
+}
+
+.user-info :last-child {
+  margin-left: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 350px;
+  }
+}
